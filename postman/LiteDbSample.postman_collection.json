@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "95a4285e-d040-4cf6-9383-5f122a99071c",
+		"name": "LiteDbSample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Date\":\"2015-05-30T01:50:21-01:00\",\n\t\"TemperatureC\": 8,\n\t\"Summary\": \"Rainy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/weatherforecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"weatherforecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44312/weatherforecast/9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"weatherforecast",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\":1,\n\t\"Date\":\"2019-11-01T19:16:00+01:00\",\n\t\"TemperatureC\": 8,\n\t\"Summary\": \"Rainy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/weatherforecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"weatherforecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44312/weatherforecast/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"weatherforecast",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44312/weatherforecast/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"weatherforecast",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
