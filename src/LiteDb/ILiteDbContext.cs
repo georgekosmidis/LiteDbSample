@@ -1,9 +1,8 @@
 ﻿using LiteDB;
 
-namespace LiteDbSample.LiteDb
+namespace LiteDbSample.LiteDb;
+
+public interface ILiteDbContext
 {
-    public interface ILiteDbContext
-    {
-        LiteDatabase Database { get; }
-    }
+    LiteDatabase Database { get; }
 }

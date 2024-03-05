@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace LiteDbSample.LiteDb
+namespace LiteDbSample.LiteDb;
+
+public interface ILiteDbWeatherForecastService
 {
-    public interface ILiteDbWeatherForecastService
-    {
-        int Delete(int id);
-        IEnumerable<WeatherForecast> FindAll();
-        WeatherForecast FindOne(int id);
-        int Insert(WeatherForecast forecast);
-        bool Update(WeatherForecast forecast);
-    }
+    bool Delete(int id);
+    IEnumerable<WeatherForecast> FindAll();
+    WeatherForecast FindOne(int id);
+    int Insert(WeatherForecast forecast);
+    bool Update(WeatherForecast forecast);
 }
